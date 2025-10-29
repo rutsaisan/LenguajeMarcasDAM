@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+ <html lang= "es" >
+    <head>
+        <title> Ruth Sainz Santos-Olmo</title>
+        <meta charset="utf.8">
+        <!-- Etiquetas de posicionamiento -->
+         <meta name="description" contente="Web de Ruth Sainz Santos-Olmo, estudiante de DAM">
+         <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+         <meta name="keywords" contente="clave1,clave2,clave3,clave4">  <!-- Hay q ir de lo mas importante a lo menos, primero se pone lo importante la primera y segun vas añadiendo seben ser cosas menos importantes -->
+         <meta name="author" contente="Ruth Sainz Santos-Olmo">
+         <link rel="icon" href="favicon.png" type="imagen/png">
+         <meta property="og:tittle" content="Ruth Sainz Santos-Olmo">
+         <meta property="og:description" content="Web de Ruth Sainz Santos-Olmo, estudiante de DAM">
+         <meta property="og:image" content="favicon.png">
+         <meta property="og:type" contente="website">
+
+         <style>
+            /*
+               selector {
+                 atributo:valor;
+                 atributo:valor;
+                 atributo:valor;
+                 ...
+                 }
+            */
+            @font-face {
+                font-family: "ubuntu";
+                src: url(Arcane\ Nine.otf);
+            }
+            h1,h2,h3{
+                color:darkviolet;
+                font-family: ubuntu;
+            }
+            body{
+                background: whitesmoke;
+                font-family:sans-serif;
+            }
+            header,main,footer{
+                width: 600px; /*Establece la anchura de los elementos */
+                background:white; /*Establece el fondo de los elementos*/
+                margin: auto; /*Centralo en pantalla*/
+                padding: 20px; /*Pon un poco de margen interior*/
+            }
+            
+         nav ul{
+         list-style-type:none;/*Anular estilos de lista*/
+         margin:0px; /*Anunalr el margen  por defecto*/
+         padding: 0px; /*Anula el margen interior por defecto*/
+         display: flex; /*Activa flex de izquierda a derecha*/
+         gap: 10px; /*Distancia entre los elementos flexbox o grid*/
+         justify-content: center;/* Centra los elemntos de menú */
+         }
+         nav ul li a{
+         text-decoration: none; /* Anula los estilos del subrayado*/
+         color: inherit; /* Le pone el color que deberia tener*/
+         color: white; /*Fuerzo el color al blanco */
+         background: indigo; /* El fondo es de un color sólido*/
+         padding: 5px; /* Le pongo margen interior*/
+         font-size: 10px; /*  Le pongo tamaño a la letra*/
+         text-transform: uppercase; /* Texto va en mayusculas*/
+         display: block; /* Permito a los elementos que sean bloques*/
+         width: 60px; /* Su anchura es de 60 pixeles*/
+         text-align: center;/* Alineo el texto al centro*/
+         
+         }
+         #inicio img{
+            width: 100% /* No quiero que la imagen se salga*/;
+         }
+         .bloque{
+            display: flex; /* El bloque de texto e imagen quiero que sea flex*/
+         }
+         .bloque img{
+            flex:1; /* La imagen ocupa una  unidad flex*/
+            width: 50%; /* Ocupa el 50% de la anchura*/
+            height: 50%; /* Ocupa el 50% de la altura*/
+         }
+         .bloque p {
+            flex:1; /* Ocupa una  unidad flex*/
+            font-size: 10px; /* Edito el tamaño del texto*/
+            text-align: 50%; /* Edito la alineación del texto*/
+         }
+         #desarrollo .bloque{
+          flex-direction: row-reverse;/* Invertir el orden para un elemento*/
+         }
+         #contenedorportafolio{
+            display: grid; /* Este elemento es una rejilla*/
+            grid-template-columns:  auto auto auto; /*Y tiene 3 columnas*/
+            gap: 20px; /*Separacion entre los elementos*/
+         }
+         #contenedorportafolio img{
+            width: 100%; /* Quiero que la imagen no se desborde*/
+         }
+         iframe{
+            flex:1; /*Tiene una unidad flex*/
+         }
+         form{
+            display: flex; /* Quiero que el formulario sea flex*/
+            flex-direction: column; /*Y quiero que sea columna*/
+            flex:1;  /*Tiene una unidad flex*/
+            gap:10px; 
+         }
+         </style>
+         
+    </head>
+    <body>
+        <header>
+         <!-- Esto es la cabecera de la página -->
+         <h1 style="color:purple;">Ruth Sainz Santos-Olmo</h1>
+         <h2> Estudiante </h2>
+         <nav>
+            <ul>
+                <li><a herf= "#inicio">Inicio</a></li>
+                <li><a herf= "#sobremi">Sobre mi</a></li>
+                <li><a herf= "#hobbies">Hobbies</a></li>
+                <li><a herf= "#planesafuturo">Planes a Futuro</a></li>
+                <li><a herf= "#creaciones">Creaciones</a></li>
+                <li><a herf= "#intereses">Intereses</a></li>
+                <li><a herf= "#portafolio">Portafolio</a></li>
+                <li><a herf= "#contacto">Contacto</a></li>
+            </ul>
+         </nav>
+         </header>
+        <main>
+          <!-- Esto es el contenido principal -->  
+           <section id="inicio">
+            <h3> Inicio</h3>
+            <img src="Ruth_800.jpg" alt="Ruth Sainz Santos-Olmo">
+           </section>
+           <section id="sobremi">
+            <h3>Sobre mi</h3>
+            <p> Soy una estudiante de DAM que sueña con ser desarroyadora de videojuegos.</p>
+           </section>
+           <section id="hobbies">
+            <h3> Hobbies</h3>
+            <div class="bloque">
+            <img src="faviconhobbye.png" alt="Ruth Sainz Santos-Olmo">
+            <p>Mis hobbies son: los videojuegos, leer libros y el baile. Estos tres son mis hobbies mas fuertes aunque tengo varios más. En videojuegos, mis géneros favoritos son supervivencia, como el Icarus o el Ark, los de aventura gráfica, de esta clase sin duda mi favorito es e Detroit Become Human y los de simulación de vida como por ejemplo los Sims 4. Pero mi juego favorito actualmente es el Tomb Rider. De libros me encantan todos los géneros pero suele destacar estre mis faoritos la fantasía. He leido muchos libros pero actualemnte mi favorito es Alas de sangre de la Saga Empíreo. Sobre el baile llevo 11 años haciendo baile, antes hacia JazzFunk y actualmente me dedico al baile Urbano como hobbie. Voy a una academia dos días a la semana para asistir a clases de 1h de duración.</p>
+            </div>
+           </section>
+           <section id="planesafuturo">
+            <h3> Planes a Futuro</h3>
+            <div class="bloque">
+            <img src="faviconestrellas.png" alt="Ruth Sainz Santos-Olmo">
+            <p>A futuro siempre he querido ir a la Universidad, por lo que tras acabar el grado superior que estoy haciendo mi idea es tratar de meterme a la carrera de Multimedia, para al final intentar cumplir mi sueño y dedicarme al diseño y creación de videojuegos.</p>
+           </section>
+           <section id="creaciones">
+            <h3>Creaciones</h3>
+            <div class="bloque">
+            <img src="faviconproyectos.png" alt="Ruth Sainz Santos-Olmo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+           </section>
+           <section id="intereses">
+            <h3>Intereses</h3>
+            <div class="bloque">
+            <img src="faviconcaperucita.png" alt="Ruth Sainz Santos-Olmo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+           </section>
+           <section id="portafolio">
+            <h3>Portafolio</h3>
+            <div id="portafolio">
+                <article>
+                 <h4>Elemento de Portafolio</h4>
+                 <p>Descripción de elemento</p>
+                 <img src="faviconflor.png" alt="Ruth Sainz Santos-Olmo">
+                </article>
+                <article>
+                 <h4>Elemento de Portafolio</h4>
+                 <p>Descripción de elemento</p>
+                 <img src="favicon.png" alt="Ruth Sainz Santos-Olmo">
+                </article>
+                <article>
+                 <h4>Elemento de Portafolio</h4>
+                 <p>Descripción de elemento</p>
+                 <img src="favicon.png" alt="Ruth Sainz Santos-Olmo">
+                </article>
+            </div>
+           </section>
+            <section id="contecto">
+            <h3>Contacto</h3>
+            <div class="bloque">
+            <iframe src= "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12315.242867310059!2d-0.40709567619629006!3d39.49618851484133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1759912190303!5m2!1ses!2ses"
+             width="600"
+              height="450" 
+              style="border:0;" 
+              allowfullscreen=""
+               loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <from>
+                <label for="nombre"> Introduce tu nombre</label>
+                <input type="text" id="nombre">
+                <label for="email"> Introduce tu email</label>
+                <input type="email" id="email">
+                <label for="mensaje"> Introduce tu mensaje</label>
+                <textarea id="mensaje"></textarea>
+                <input type="submit">
+            </from>
+            </div>
+            </section>
+         </main>
+      <footer>
+        <!-- Esto es el pie de página -->
+         <a href= "https://www.instagram.com/rss_0907">Instagram </a>
+         <a href= "https://github.com/rutsaisan">GitHub </a>
+         <a href= "https://www.tiktok.com/@rss_0907">TikTok </a>
+     </footer>
+           
+       
+    </body>
+ </html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ruth Sainz Santos-Olmo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Web de Ruth Sainz Santos-Olmo, estudiante de DAM">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="clave1,clave2,clave3,clave4">
+    <meta name="author" content="Ruth Sainz Santos-Olmo">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta property="og:title" content="Ruth Sainz Santos-Olmo">
+    <meta property="og:description" content="Web de Ruth Sainz Santos-Olmo, estudiante de DAM">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:type" content="website">
+
+    <style>
+        @font-face {
+            font-family: "ubuntu";
+            /* Corregido: Comillas en la ruta para seguridad */
+            src: url("Arcane Nine.otf");
+        }
+        h1,h2,h3{
+            color:darkviolet;
+            font-family: ubuntu;
+        }
+        body{
+            background: whitesmoke;
+            font-family:sans-serif;
+        }
+        header,main,footer{
+            width: 600px;
+            background:white;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        nav ul{
+            list-style-type:none;
+            margin:0px;
+            padding: 0px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        nav ul li a{
+            text-decoration: none;
+            /* color: inherit;  (Línea redundante) */
+            color: white;
+            background: indigo;
+            padding: 5px;
+            font-size: 10px;
+            text-transform: uppercase;
+            display: block;
+            width: 60px;
+            text-align: center;
+        }
+        #inicio img{
+            width: 100%;
+        }
+        .bloque{
+            display: flex;
+            gap: 15px; /* Añadido: espacio entre elementos flex */
+        }
+        .bloque img{
+            flex:1;
+            width: 50%;
+            /* Corregido: height: 50% eliminado */
+            object-fit: cover; /* Añadido: para que la imagen no se deforme */
+        }
+        .bloque p {
+            flex:1;
+            font-size: 10px;
+            /* Corregido: text-align: 50% no es válido. */
+            text-align: justify; 
+        }
+        #desarrollo .bloque{
+            flex-direction: row-reverse;
+        }
+        
+        /* Corregido: Selector de CLASE (.portafolio) para que coincida con tu HTML */
+        .portafolio{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+        }
+        /* Corregido: Apuntando a la imagen DENTRO de .portafolio */
+        .portafolio img{
+            width: 100%;
+        }
+        iframe{
+            flex:1;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            flex:1;
+            gap:10px; 
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1 style="color:purple;">Ruth Sainz Santos-Olmo</h1>
+        <h2> Estudiante </h2>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Sobre mi</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#planesafuturo">Planes a Futuro</a></li>
+                <li><a href="#creaciones">Creaciones</a></li>
+                <li><a href="#intereses">Intereses</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h3> Inicio</h3>
+            <img src="Ruth_800.jpg" alt="Ruth Sainz Santos-Olmo">
+        </section>
+        <section id="sobremi">
+            <h3>Sobre mi</h3>
+            <p> Soy una estudiante de DAM que sueña con ser desarroyadora de videojuegos.</p>
+        </section>
+        <section id="hobbies">
+            <h3> Hobbies</h3>
+            <div class="bloque">
+                <img src="favicon.png" alt="Icono Hobbies">
+                <p>Mis hobbies son: los videojuegos...</p>
+            </div>
+        </section>
+        <section id="planesafuturo">
+            <h3> Planes a Futuro</h3>
+            <div class="bloque">
+                <img src="favicon.png" alt="Icono Planes">
+                <p>A futuro siempre he querido ir a la Universidad...</p>
+            </div>
+        </section>
+        <section id="creaciones">
+            <h3>Creaciones</h3>
+            <div class="bloque">
+                <img src="favicon.png" alt="Icono Creaciones">
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+        </section>
+        <section id="intereses">
+            <h3>Intereses</h3>
+            <div class="bloque">
+                <img src="favicon.png" alt="Icono Intereses">
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+        </section>
+        
+        <section id="portafolio">
+            <h3>Portafolio</h3>
+            <div class="portafolio">
+                <article>
+                    <h4>Elemento de Portafolio</h4>
+                    <p>Descripción de elemento</p>
+                    <img src="favicon.png" alt="Elemento Portafolio 1">
+                </article>
+                <article>
+                    <h4>Elemento de Portafolio</h4>
+                    <p>Descripción de elemento</p>
+                    <img src="favicon.png" alt="Elemento Portafolio 2">
+                </article>
+                <article>
+                    <h4>Elemento de Portafolio</h4>
+                    <p>Descripción de elemento</p>
+                    <img src="favicon.png" alt="Elemento Portafolio 3">
+                </article>
+            </div>
+        </section>
+        
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <div class="bloque">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38421112953!2d-3.819619421738733!3d40.43786975936836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1612345678901!5m2!1sen!2sus"
+                    width="600"
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen=""
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <form>
+                    <label for="nombre"> Introduce tu nombre</label>
+                    <input type="text" id="nombre">
+                    <label for="email"> Introduce tu email</label>
+                    <input type="email" id="email">
+                    <label for="mensaje"> Introduce tu mensaje</label>
+                    <textarea id="mensaje"></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/rss_0907">Instagram </a>
+        <a href="https://github.com/rutsaisan">GitHub </a>
+        <a href="https://www.tiktok.com/@rss_0907">TikTok </a>
+    </footer>
+</body>
+</html>
