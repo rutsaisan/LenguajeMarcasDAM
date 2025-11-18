@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Currículum</title>
+        <meta charset ="utf-8">
+        <style>
+            html{background:grey;font-family:sans-serif;font-size: 11px;}
+            body{
+                width: 600px;background:ivory;
+                margin:auto;display:flex;}
+            #izquierda .marco-foto img {
+               width:100%;
+             display: block;
+             }
+            #izquierda{flex:1;background: plum;padding:20px;}
+            #derecha{flex:4;padding:20px;}
+            #derecha article{display: flex;align-items:center;gap:20px;}
+            #derecha article *{padding: 0px;margin: 0px;}
+            #derecha h2 {
+              /* 1. La línea la ponemos ARRIBA del texto */
+              border-top: 2px solid #333333; 
+              /* 2. Damos espacio ENTRE la línea (que está arriba) y el texto */
+             padding-top: 15px; 
+             /* 3. Damos espacio POR ENCIMA de la línea (para separarla del H1) */
+             margin-top: 25px; 
+            }
+            @font-face {
+                font-family: "Titulo1";
+                src: url(fortalesia_script/FortalesiaPlain_PERSONAL_USE_ONLY.otf);
+            }
+            @font-face {
+                font-family: "Titulo2";
+                src: url(varsity_team/VarsityTeam-Bold.otf);   
+            }
+            h1{
+                color:black;
+                font-family: Titulo1;
+                font-size: 40px;
+                font-weight: 500;
+            }
+            h2{
+                color:black;
+                font-family: Titulo2;
+                font-weight: 100;
+            }
+            h3{
+             background-color: #f4d7f9; 
+             padding: 10px; 
+             text-transform: uppercase;
+             letter-spacing: 1px;
+             font-size: 1.1rem; 
+            }
+            h4{
+                color:rgb(65, 17, 64);
+                font-family: sans-serif;
+            }
+            body{
+                background: whitesmoke;
+                font-family:sans-serif;
+            }
+            .marco-foto {
+              
+              border: 2px solid #e8bfe8; 
+              padding: 10px; 
+               background-color: #35052f; 
+               box-sizing: border-box; 
+            }
+        </style>
+    </head>
+    <body>
+      <section id = "izquierda">
+           <div class="marco-foto">
+             <img src="Ruth_800.jpg" alt="Foto de Ruth Sainz">
+            </div>
+            <article>
+                <h3>Contacto</h3>
+                <ul>
+                    <li>634480989</li>
+                    <li>rutsaisan@gmail.com</li>
+                    <li><a href= "https://github.com/rutsaisan">GitHub </a></li>
+                    <li>Mislata, C/San Francisco de Asís</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Herramientas</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>HTML</li>
+                </ul>
+            </article>  
+            <article>
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Castellano (Nativo)</li>
+                    <li>Valenciano medio(sin certificar)</li>
+                    <li>Inglés medio/alto(sin certificar)</li>
+                </ul>
+            </article>  
+        </section>
+        <section id = "derecha">
+            <h1>Ruth Sainz Santos-Olmo</h1>
+            <h2>Estudiante de DAM</h2>
+            <p>Estudiante de DAM apasionado por el desarrollo de videojuegos. Mis habilidades incluyen el liderazgo y la organización de equipos, logradas a través de mi experiencia como scout.</p>
+            <div id=" experiencia">
+                <h3>Experiencia Profesianal</h3>
+                <article>
+                    
+                    <div class="texto">
+                    <h4>Guía de proyectos</h4>
+                    <h5>2017 - Presente - Scout</h5>
+                    <p>Desde los 11 años, he participado activamente en los scouts, progresando hasta el puesto de guía, donde lideré a mi patrulla y me encargué de la seguridad y el bienestar de mis compañeros. Actualmente, como rover, realizo servicio comunitario, colaboro en la organización de eventos y ayudo en todo lo posible en los de mi ciudad, demostrando mi compromiso y capacidad de iniciativa.</p>
+                    </div>
+                </article>
+                <article>
+                    
+                    <div class="texto">
+                    <h4>Atención al cliente</h4>
+                    <p>Adquirí experiencia en atención al cliente y gestión de inventario al ayudar regularmente en la tienda de ropa de mi tía. </p>
+                    </div>
+                </article>
+                                <article>
+                    
+                    <div class="texto">
+                    <h4>Organización de eventos</h4>
+                    <p>He desarrollado habilidades de organización, planificación y logística al ser la persona principal de mi grupo encargada de coordinar y planificar todos nuestros eventos y actividades.</p>
+                    </div>
+                </article>
+            </div>
+             <div id="formacion">
+                <h3>Formación</h3>
+                <article>
+                    
+                    <div class="texto">
+                    <h4>Desarrollo de aplicaciones multiplataforma</h4>
+                    <h5>2025-2026</h5>
+                    <p>CEAC FP, Valencia, Burjassot</p>
+                    </div>
+                </article>
+                <article>
+                    
+                    <div class="texto">
+                    <h4>Bachillerato Científico-Tecnológicio</h4>
+                    <h5>2024-2025</h5>
+                    <p>IES Molí del Sol, Mislata</p>
+                    </div>
+                
+             </div>
+
+        </section>
+    </body>
+</html>
