@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+  </head>
+  <body>
+    
+   	<script>
+      
+     let temporizador = setTimeout("bucle()",1000); //Creo un temporizador porque si no, nada se pone en marcha
+
+    //Fijaros que llamo a la funcion desde dentro de la funcion 
+    
+     function bucle(){
+        console.log("Hola");
+        clearTimeout(temporizador) //Elimino temporizador para no acumular
+        temporizador = setTimeout("bucle()",1000) //Llamo al bucle de nuevo
+     }
+    </script>
+  </body>
+</html>
