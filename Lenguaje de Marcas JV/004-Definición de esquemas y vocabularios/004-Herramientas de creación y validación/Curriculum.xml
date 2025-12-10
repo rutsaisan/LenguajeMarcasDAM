@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="curriculum.xsd">
+    <datos_personales>
+        <nombre>Ruth Sainz</nombre>
+        <titulo_profesional>Estudiante de DAM</titulo_profesional>
+        <foto>Ruth_800.jpg</foto>
+        <perfil>
+            Estudiante apasionada por el desarrollo de videojuegos y aplicaciones multiplataforma. Mis habilidades incluyen el liderazgo y la organización de equipos, logradas a través de mi amplia experiencia coordinando grupos scouts. Busco aplicar mis conocimientos técnicos y soft skills en proyectos desafiantes.
+        </perfil>
+    </datos_personales>
+
+    <contacto>
+        <telefono>634 480 989</telefono>
+        <email>rutsaisan@gmail.com</email>
+        <enlace tipo="github">https://github.com/rutsaisan</enlace>
+        <ubicacion>Mislata, Valencia</ubicacion>
+    </contacto>
+
+    <habilidades>
+        <skill>Python</skill>
+        <skill>MySQL</skill>
+        <skill>HTML / CSS</skill>
+        <skill>Liderazgo</skill>
+    </habilidades>
+
+    <idiomas>
+        <idioma nivel="Nativo">Castellano</idioma>
+        <idioma nivel="Medio">Valenciano</idioma>
+        <idioma nivel="Medio/Alto">Inglés</idioma>
+    </idiomas>
+
+    <experiencia_profesional>
+        <puesto>
+            <titulo>Guía de proyectos y grupos</titulo>
+            <periodo>2017 - Presente</periodo>
+            <entidad>Grupo Scout</entidad>
+            <descripcion>Liderazgo y voluntariado. Desde los 11 años he participado activamente, progresando hasta el puesto de guía. Lideré mi patrulla encargándome de la seguridad y bienestar del equipo. Actualmente, como Rover, realizo servicio comunitario, colaboro en la organización logística de eventos y gestiono iniciativas ciudadanas.</descripcion>
+        </puesto>
+
+        <puesto>
+            <titulo>Atención al cliente</titulo>
+            <periodo>Veranos</periodo>
+            <entidad>MARISOL LENCERIA Y MODA INFANTIL</entidad>
+            <descripcion>Gestión de inventario y atención directa al cliente en tienda de moda.</descripcion>
+        </puesto>
+
+        <puesto>
+            <titulo>Coordinación de eventos</titulo>
+            <periodo>Proyectos Scout</periodo>
+            <descripcion>Responsable principal de logística, planificación de horarios y coordinación de recursos materiales para actividades grupales.</descripcion>
+        </puesto>
+    </experiencia_profesional>
+
+    <formacion_academica>
+        <estudio>
+            <titulo>CFGS Desarrollo de Aplicaciones Multiplataforma</titulo>
+            <periodo>2025 - 2026 (En curso)</periodo>
+            <centro>CEAC FP, Valencia (Burjassot)</centro>
+        </estudio>
+
+        <estudio>
+            <titulo>Bachillerato Científico-Tecnológico</titulo>
+            <periodo>2024 - 2025</periodo>
+            <centro>IES Molí del Sol, Mislata</centro>
+        </estudio>
+    </formacion_academica>
+</curriculum>

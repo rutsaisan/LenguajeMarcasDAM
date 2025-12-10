@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona>
+   <nombre>Ruth</nombre>
+   <apellidos>Sainz Santos-Olmo</apellidos>
+   <telefonos>
+      <telefono>12345567</telefono>
+      <telefono>6534646</telefono>
+      ...
+   </telefonos>
+</persona>
